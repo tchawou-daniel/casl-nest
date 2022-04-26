@@ -74,7 +74,6 @@ export class UserController {
   }
 
   @Delete(':id')
-  @CheckAbilities({ action: Action.Delete, subject: User })
   remove(@Param('id') id: string) {
     return this.userService.remove(+id);
   }
