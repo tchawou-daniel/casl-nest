@@ -36,6 +36,7 @@ export class AbilityFactory {
       cannot(Action.Create, User).because(
         ' Your special message: only Admin!!!',
       );
+      cannot(Action.Delete, User).because('you just cant');
     }
     return build({
       detectSubjectType: (subject) =>
