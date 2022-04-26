@@ -67,6 +67,7 @@ export class UserController {
     // if (!isAllowed) {
     //   throw new ForbiddenException('only Admin!!');
     // }
+
     try {
       const userToUpdate = this.userService.findOne(+id);
       ForbiddenError.from(ability).throwUnlessCan(Action.Update, userToUpdate);
