@@ -14,7 +14,6 @@ import { UpdateUserDto } from './dto/update-user.dto';
 import { AbilityFactory, Action } from '../ability/ability.factory';
 import { User } from './entities/user.entity';
 import { ForbiddenError } from '@casl/ability';
-import { CheckAbilities } from '../ability/abilities.decorator';
 
 @Controller('users')
 export class UserController {
